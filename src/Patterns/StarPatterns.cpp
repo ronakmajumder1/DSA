@@ -149,8 +149,18 @@ void pattern18(int num) {
     }
 }
 
+void rectanglePattern(int num) {
+    for (int i = 0; i < num; i++){
+        for (int j = 0; j< num; j++){
+            if (i == 0 || j == 0 || i == num-1 || j == num-1 ) cout << "*";
+            else cout << " ";
+        }
+            cout << endl;
+    }
+}
+
 int main(){
     int num = 5;
-    pattern18(num);
+    rectanglePattern (num);
     return 0;
 }
